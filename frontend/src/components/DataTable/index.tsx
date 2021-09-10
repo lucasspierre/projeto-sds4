@@ -5,7 +5,7 @@ import { SalePage } from "types/sale";
 import { formatLocalDate } from "utils/formart";
 import { BASE_URL } from "utils/requests";
 
-const DataTable = () => {
+function DataTable() {
     const [activePage, setActivePage] = useState(0);
     const [page, setPage] = useState<SalePage>({
         first: true,
